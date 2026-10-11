@@ -7,7 +7,6 @@ import java.util.Set;
 final class GridWorld implements TreeWorld {
     private final Set<BlockPos3> logs = new HashSet<>();
     private final Set<BlockPos3> leaves = new HashSet<>();
-    private final Set<BlockPos3> otherLogs = new HashSet<>();
 
     /** Adds {@code height} logs stacked upward from (x, y, z). */
     void trunk(int x, int y, int z, int height) {
@@ -18,10 +17,6 @@ final class GridWorld implements TreeWorld {
 
     void leaf(int x, int y, int z) {
         leaves.add(new BlockPos3(x, y, z));
-    }
-
-    void otherWood(int x, int y, int z) {
-        otherLogs.add(new BlockPos3(x, y, z));
     }
 
     @Override

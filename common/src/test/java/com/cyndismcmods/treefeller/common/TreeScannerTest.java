@@ -56,7 +56,6 @@ class TreeScannerTest {
         GridWorld w = new GridWorld();
         w.trunk(0, 0, 0, 4);
         w.leaf(0, 4, 0);
-        w.otherWood(1, 0, 0);
         assertEquals(4, TreeScanner.findTree(w, new BlockPos3(0, 0, 0)).size());
         assertFalse(TreeScanner.findTree(w, new BlockPos3(0, 0, 0)).contains(new BlockPos3(1, 0, 0)));
     }

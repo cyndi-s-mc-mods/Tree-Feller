@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-final class TreeScanner {
+public final class TreeScanner {
     static final int MAX_LOGS = 512;
 
     private TreeScanner() {
@@ -17,7 +17,7 @@ final class TreeScanner {
      * Returns the logs of the tree containing origin, bottom-up, or an empty list
      * if origin is not a bottom log, the group has no natural leaf, or it exceeds MAX_LOGS.
      */
-    static List<BlockPos3> findTree(TreeWorld world, BlockPos3 origin) {
+    public static List<BlockPos3> findTree(TreeWorld world, BlockPos3 origin) {
         if (!world.isSameLog(origin) || world.isSameLog(origin.offset(0, -1, 0))) {
             return List.of();
         }
