@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "treefeller",
+	"version": "${version}",
+	"name": "Tree Feller",
+	"description": "Chop the bottom log of a tree with an axe to fell the whole tree.",
+	"authors": ["cyndismcmods"],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.cyndismcmods.treefeller.fabric.TreeFellerFabric"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

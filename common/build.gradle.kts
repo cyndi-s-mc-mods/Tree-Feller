@@ -2,6 +2,8 @@ plugins {
     `java-library`
 }
 
+version = providers.gradleProperty("mod_version").get()
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(25))
