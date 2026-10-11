@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[66,)"
+license="MIT"
+
+[[mods]]
+modId="treefeller"
+version="${version}"
+displayName="Tree Feller"
+authors="cyndismcmods"
+description='''Chop one log with an axe and the whole tree falls.'''
+
+[[dependencies.treefeller]]
+    modId="forge"
+    mandatory=true
+    versionRange="[66,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.treefeller]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[26.3,26.4,)"
+    ordering="NONE"
+    side="BOTH"
